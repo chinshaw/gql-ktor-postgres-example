@@ -1,0 +1,12 @@
+version: '3.6'
+
+services:
+  kasura:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8085:8085"
+      - "5432:5432"
+    networks:
+      - default
